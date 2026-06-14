@@ -30,10 +30,12 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: true,
+    origin: "https://your-project.vercel.app",
     credentials: true,
   }),
 );
+
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;
