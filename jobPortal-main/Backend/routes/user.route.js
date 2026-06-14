@@ -10,19 +10,10 @@ router.route('/login').post(login);
 router.route('/logout').get(logout);
 router.route("/profile/update").put(
   (req, res, next) => {
-    console.log("hitttttttttttttttttt");
     next();
   },
   isAuthenticated,
-  (req, res, next) => {
-    console.log("Before multer");
-    next();
-  },
   singleUpload,
-  (req, res, next) => {
-    console.log("after multer");
-    next();
-  },
   updateProfile,
 );
 
