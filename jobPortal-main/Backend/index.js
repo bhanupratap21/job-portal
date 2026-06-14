@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://your-project.vercel.app",
+    origin: "https://job-portal-8ro2.vercel.app/",
     credentials: true,
   }),
 );
