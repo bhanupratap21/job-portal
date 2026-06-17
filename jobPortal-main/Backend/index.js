@@ -41,8 +41,6 @@ app.use(
   }),
 );
 
-
-
 // Start the server
 const PORT = process.env.PORT || 3000;
 
