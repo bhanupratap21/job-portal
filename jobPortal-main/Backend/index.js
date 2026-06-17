@@ -28,9 +28,14 @@ app.use(cookieParser());
 // };
 // app.use(cors(corsOptions));
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://job-portal-8ro2.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "https://job-portal-8ro2.vercel.app/",
+    origin: allowedOrigins,
     credentials: true,
   }),
 );
