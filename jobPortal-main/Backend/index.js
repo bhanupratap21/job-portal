@@ -45,6 +45,11 @@ app.use(
 // Start the server
 const PORT = process.env.PORT || 3000;
 
+app.get("/test-cookie", (req, res) => {
+  console.log(req.cookies);
+  res.json(req.cookies);
+});
+
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
