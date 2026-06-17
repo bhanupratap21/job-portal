@@ -31,6 +31,7 @@ app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",
   "https://job-portal-8ro2.vercel.app",
+  "https://job-portal-bhanu.vercel.app"
 ];
 
 app.use(
